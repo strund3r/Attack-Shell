@@ -1,10 +1,10 @@
-# **Containarized Attack Shell**
+# **(Containarized) Attack Shell**
 ##### 	*by Strund3r*
 
-# **Attack Shell a.k.a. Ani Shell**
+# **Ani Shell**
 ##### 	*by lionaneesh*
 
-###### *Note: Ani-Shell was intended to be used for Demonstration and Learning Purposes only. The author is not responsible for any damage it may cause and user holds full responsibility of his/her actions.*
+###### *Note: This software was intended to be used for Demonstration and Learning Purposes only. The author is not responsible for any damage it may cause and user holds full responsibility of his/her actions.*
 
 ### ==[0x00] **Introduction**
 

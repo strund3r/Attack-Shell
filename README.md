@@ -14,7 +14,7 @@
 Attack Shell a.k.a. Ani-Shell is a simple PHP shell with some unique features like Mass Mailer, a simple Web-Server Fuzzer, Dosser, Back Connect, Bind Shell, Back Connect, Auto Rooter etc.
 This shell has immense capabilities and have been written with some coding standards in mind for better editing and customization.
 
-### **Run in a local Docker Container**
+### **Run on a local Docker Container**
 
 Run on `terminal`:
 ```sh

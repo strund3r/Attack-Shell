@@ -10,7 +10,7 @@
 []      +  Email: lionaneesh@gmail.com         +
 []      +  Twitter: twitter.com/lionaneesh     +
 []====================================================
-[]>>>>>>>>>>>> containarized by Strund3r <<<<<<<<<<<<<
+[]>>>>>>>>>>>> containerized by Strund3r <<<<<<<<<<<<<
 []====================================================
 []      +  Email: franzwagner.str@gmail.com    +
 []      +  Twitter: twitter.com/strund3r       +

@@ -5,8 +5,7 @@ machine:
 test:
   override:
     - docker run -d --name attack strund3r/attack-shell; sleep 10
-    - CIP=$(docker inspect -f '{{range .NetworkSettings.Networks}}{{.IPAddress}}{{end}}' attack)
-    - curl --retry 10 --retry-delay 5 -v http://$CIP/Attack-Shell.php
+    - curl --retry 10 --retry-delay 5 -v http://172.18.0.2/Attack-Shell.php
 
 # deployment:
 #   hub:

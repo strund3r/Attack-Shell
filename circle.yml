@@ -2,11 +2,11 @@ machine:
   services:
     - docker
 
-# test:
-#   override:
-#     - docker run -d strund3r/attack-shell; sleep 10
-#     - curl --retry 10 --retry-delay 5 -v http://localhost
-#
+test:
+  override:
+    - docker run -d strund3r/attack-shell; sleep 10
+    - curl --retry 10 --retry-delay 5 -v http://localhost/Attack-Shell.php
+
 # deployment:
 #   hub:
 #     branch: master

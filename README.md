@@ -18,12 +18,17 @@ This shell has immense capabilities and have been written with some coding stand
 
 Run on `terminal`:
 ```sh
-$ docker run -d --name attack-shell strund3r/attack-shell
+$ docker run -d -p 80:80 --name attack-shell strund3r/attack-shell
+```
+
+To find the container's IP address, run the following command:
+```sh
+$ docker inspect -f '{{range .NetworkSettings.Networks}}{{.IPAddress}}{{end}}' attack-shell
 ```
 
 If you want to use a `php.ini`, change the `Dockerfile` to:
 ```
-FROM php:7.0-apache
+FROM tutum/apache-php
 
 MAINTAINER Franzwagner Ternus <franzwagner.str@gmail.com>
 
@@ -54,7 +59,7 @@ Where `config/` is the directory containing your `php.ini` file.
 ### **Default Login**
 
 - Username: *admin*
-- Password: *12345687*
+- Password: *12345678*
 
 ### **Features**
 

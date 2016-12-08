@@ -1,4 +1,4 @@
-FROM php:7.0-apache
+FROM tutum/apache-php
 
 MAINTAINER Franzwagner Ternus <franzwagner.str@gmail.com>
 

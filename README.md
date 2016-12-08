@@ -59,7 +59,7 @@ Where `config/` is the directory containing your `php.ini` file.
 ### **Default Login**
 
 - Username: *admin*
-- Password: *12345678*
+- Password: *12345687*
 
 ### **Features**
 

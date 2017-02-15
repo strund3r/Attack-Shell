@@ -1,5 +1,6 @@
 [//]: # (Badges)
-[![Image Layers](https://images.microbadger.com/badges/image/strund3r/attack-shell.svg)](https://microbadger.com/images/strund3r/attack-shell "Get your own image badge on microbadger.com") [![Version](https://images.microbadger.com/badges/version/strund3r/attack-shell.svg)](https://microbadger.com/images/strund3r/attack-shell "Get your own version badge on microbadger.com") [![CircleCI](https://circleci.com/gh/Strund3r/Attack-Shell.svg?style=svg)](https://circleci.com/gh/Strund3r/Attack-Shell)
+[![Image Layers](https://images.microbadger.com/badges/image/strund3r/attack-shell.svg)](https://microbadger.com/images/strund3r/attack-shell "Get your own image badge on microbadger.com")
+[![Docker Pulls](https://img.shields.io/docker/pulls/strund3r/attack-shell.svg)](https://hub.docker.com/r/strund3r/attack-shell/) [![Version](https://images.microbadger.com/badges/version/strund3r/attack-shell.svg)](https://microbadger.com/images/strund3r/attack-shell "Get your own version badge on microbadger.com") [![Docker Automated buil](https://img.shields.io/docker/automated/strund3r/attack-shell.svg)](https://hub.docker.com/r/strund3r/attack-shell/) [![CircleCI](https://circleci.com/gh/Strund3r/Attack-Shell.svg?style=svg)](https://circleci.com/gh/Strund3r/Attack-Shell)
 
 # **(Containerized) Attack Shell**
 ##### 	*by Strund3r*
@@ -28,18 +29,20 @@ $ docker inspect -f '{{range .NetworkSettings.Networks}}{{.IPAddress}}{{end}}' a
 
 If you want to use a `php.ini`, change the `Dockerfile` to:
 ```
-FROM tutum/apache-php
+FROM k0st/alpine-apache-php
 
-MAINTAINER Franzwagner Ternus <franzwagner.str@gmail.com>
+LABEL maintainer "franzwagner.str@gmail.com"
 
 # Change the TZ according to your region
 ENV TZ=America/Sao_Paulo
-RUN ln -snf /usr/share/zoneinfo/$TZ /etc/localtime && echo $TZ > /etc/timezone
+
+RUN apk add --update --virtual .build-deps tzdata && \
+  ln -snf /usr/share/zoneinfo/${TZ} /etc/localtime && \
+  echo "${TZ}" > /etc/timezone && \
+  apk del .build-deps
 
 COPY config/php.ini /usr/local/etc/php/
 COPY . /var/www/html
-
-RUN echo "ServerName localhost" | tee /etc/apache2/conf-available/fqdn.conf && a2enconf fqdn
 ```
 Where `config/` is the directory containing your `php.ini` file.
 
@@ -48,7 +51,7 @@ Where `config/` is the directory containing your `php.ini` file.
 1. Email Traceback is set to **_off_** as default and emails will not be sent. If you are setting this feature **_on_**, make sure you change the default email address (franzwagner.str@gmail.com) to your email address.
 **Please change it before using!**
 
-2. Username and Password are set to **_admin_** and **_12345687_** respectively, please change them for better security.
+2. Username and Password are set to **_admin_** and **_12345678_** respectively, please change them for better security.
 
 3. The Lock Mode feature is set to **_on_** ! This should not be change unless you want your shell exposed.
 
@@ -59,7 +62,7 @@ Where `config/` is the directory containing your `php.ini` file.
 ### **Default Login**
 
 - Username: *admin*
-- Password: *12345687*
+- Password: *12345678*
 
 ### **Features**
 

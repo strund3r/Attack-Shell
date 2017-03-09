@@ -10,4 +10,4 @@ RUN apk add --update --virtual .build-deps tzdata && \
   echo "${TZ}" > /etc/timezone && \
   apk del .build-deps
 
-COPY . /var/www/html
+COPY . /app

@@ -379,6 +379,15 @@ td.file a , .file a
 {
     text-decoration:none;
 }
+a:link, a:visited {
+    color: #ff0000;
+    text-decoration: underline;
+    cursor: zoom-in;
+}
+
+a:link:active, a:visited:active {
+    color: #00ff00;
+}
 a.dir
 {
     font-weight:bold;
@@ -490,7 +499,7 @@ if($lock == 'on' && (!isset($_SESSION['authenticated']) || $_SESSION['authentica
             <td>
                 <h1><?php echo $greeting;?></h1><br /><br />
                 <form method="POST" action="<?php echo $_SERVER['PHP_SELF'];?>">
-                <input name="user" value="Username" onfocus="if(this.value == 'Username')this.value = '';" onblur="if(this.value=='')this.value='Username';"/> <input name="pass" type="password" value="Password" onfocus="if(this.value == 'Password')this.value = '';" onblur="if(this.value=='')this.value='Password';"/> <input class="own" type="Submit" value="Own This Box!"/>
+                <input name="user" value="Username" onfocus="if(this.value == 'Username')this.value = '';" onblur="if(this.value=='')this.value='Username';"/> <input name="pass" type="password" value="Password" onfocus="if(this.value == 'Password')this.value = '';" onblur="if(this.value=='')this.value='Password';"/> <input class="own" type="Submit" value="Own This Box!"/> <a href="license.php">See License</a>
                 </form>
             </td>
         </tr>

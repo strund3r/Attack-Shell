@@ -8,7 +8,7 @@
 # **Ani Shell**
 ##### 	*by lionaneesh*
 
-###### *Note: This software was intended to be used for Demonstration and Learning Purposes only. The author is not responsible for any damage it may cause and user holds full responsibility of his/her actions.*
+###### *Note: This software was intended to be used for Demonstration and Learning Purposes only. The author is not responsible for any damage it may cause and user holds full responsibility of his/her actions. ALL CREDIT GOES TO @lionaneesh*
 
 ### **Introduction**
 

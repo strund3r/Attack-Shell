@@ -1765,7 +1765,7 @@ else if(isset($_GET['connect']))
                 </tr>
                 <tr>
                     <td>Passwd </td>
-                    <td><input style="width: 100px;" class="cmd" name="passwd" size='5' value="12345687"/>
+                    <td><input style="width: 100px;" class="cmd" name="passwd" size='5' value="12345678"/>
                 </tr>
                 <tr>
                 <td>

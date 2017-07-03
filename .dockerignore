@@ -1,4 +1,6 @@
-Dockerfile
+.git
+.dockerignore
 circle.yml
+Dockerfile
 LICENSE
 README.md

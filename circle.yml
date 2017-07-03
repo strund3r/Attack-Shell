@@ -1,11 +1,21 @@
 machine:
   services:
     - docker
+  timezone:
+    America/Sao_Paulo
+
+dependencies:
+  override:
+    - docker build --rm=false -t strund3r/attack-shell .
 
 test:
   override:
-    - docker run -d --name attack strund3r/attack-shell; sleep 10
-    - curl --retry 10 --retry-delay 5 -v http://172.18.0.2/index.php
+    - docker build:
+        parallel: true
+    - docker run -d --name attack strund3r/attack-shell; sleep 10:
+        parallel: true
+    - curl --retry 10 --retry-delay 5 -v http://172.18.0.2/index.php:
+        parallel: true
 
 deployment:
   hub:

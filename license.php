@@ -10,7 +10,7 @@
     <header>
         <hgroup>
             <h1>MIT License</h1>
-            <h3>Copyright (c) 2016 Franzwagner Ternus Chaves</h3>
+            <h3>Copyright (c) 2016, 2017 Franzwagner Ternus</h3>
             <h4>Note: This software was intended to be used for Demonstration and Learning Purposes only. The author is not responsible for any damage it may cause and user holds full responsibility of his/her actions.</h4>
         </hgroup>
     </header>

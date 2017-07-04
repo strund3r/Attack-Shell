@@ -1,6 +1,7 @@
 [//]: # (Badges)
+[![CircleCI](https://circleci.com/gh/strund3r/Attack-Shell.svg?style=shield&circle-token=1d6716ce0fb3e522e9d1b56accd7a3c4c9090700)](https://circleci.com/gh/strund3r/Attack-Shell)
 [![Image Layers](https://images.microbadger.com/badges/image/strund3r/attack-shell.svg)](https://microbadger.com/images/strund3r/attack-shell "Get your own image badge on microbadger.com")
-[![Docker Pulls](https://img.shields.io/docker/pulls/strund3r/attack-shell.svg)](https://hub.docker.com/r/strund3r/attack-shell/) [![Version](https://images.microbadger.com/badges/version/strund3r/attack-shell.svg)](https://microbadger.com/images/strund3r/attack-shell "Get your own version badge on microbadger.com") [![Docker Automated buil](https://img.shields.io/docker/automated/strund3r/attack-shell.svg)](https://hub.docker.com/r/strund3r/attack-shell/) [![CircleCI](https://circleci.com/gh/Strund3r/Attack-Shell.svg?style=svg)](https://circleci.com/gh/Strund3r/Attack-Shell)
+[![Docker Pulls](https://img.shields.io/docker/pulls/strund3r/attack-shell.svg)](https://hub.docker.com/r/strund3r/attack-shell/) [![Version](https://images.microbadger.com/badges/version/strund3r/attack-shell.svg)](https://microbadger.com/images/strund3r/attack-shell "Get your own version badge on microbadger.com") [![Docker Automated buil](https://img.shields.io/docker/automated/strund3r/attack-shell.svg)](https://hub.docker.com/r/strund3r/attack-shell/)
 
 # **(Containerized) Attack Shell**
 ##### 	*by Strund3r*
